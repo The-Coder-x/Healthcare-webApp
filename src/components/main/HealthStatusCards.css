@@ -1,0 +1,27 @@
+.health-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    /* border:2px solid #e0e0e0; */
+    
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card.good {
+    border-left: 5px solid green;
+  }
+  
+  .card.warning {
+    border-left: 5px solid orange;
+  }
+  
+  .card.critical {
+    border-left: 5px solid red;
+  }
