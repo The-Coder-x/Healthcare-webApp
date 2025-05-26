@@ -16,6 +16,8 @@
   object-fit: contain;
 } */
 
+
+/* 
 .anatomy-container {
   background: white;
   padding: 1rem;
@@ -27,8 +29,8 @@
   height: 400px;
   width:30vw;
   margin-bottom: 1rem;
-  overflow: hidden; /* Prevents image overflow */
-  /* border: 2px solid red; */
+  overflow: hidden; 
+ 
 }
 
 .anatomy-container {
@@ -41,7 +43,7 @@
   align-items: center;
   height: 400px;
   margin-bottom: 1rem;
-  overflow: hidden; /* Prevents image overflow */
+  overflow: hidden; 
 }
 
 .anatomy-image {
@@ -52,4 +54,55 @@
   object-fit: contain;
   display: block;
   margin: 0 auto;
+} */
+
+
+/* new responsive css */
+
+.anatomy-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 30vw;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.anatomy-image {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .anatomy-container {
+    height: 300px;
+    width: 50vw;
+    padding: 0.7rem;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .anatomy-container {
+    height: 180px;
+    width: 95vw;
+    padding: 0.4rem;
+    border-radius: 8px;
+  }
+  .anatomy-image {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }

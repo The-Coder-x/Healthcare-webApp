@@ -1,6 +1,25 @@
-.dashboard-main {
+/* .dashboard-main {
     display: grid;
     gap: 1rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
+  } */
+
+
+  /* new responsive css */
+  .dashboard-main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .dashboard-main {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
   }

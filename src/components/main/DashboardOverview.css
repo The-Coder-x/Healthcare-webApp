@@ -1,7 +1,26 @@
-.dashboard-overview {
+/* .dashboard-overview {
     grid-column: 1 / -1;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
   }
+   */
+
+   /* new responsive css */
+
+   .dashboard-overview {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
   
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .dashboard-overview {
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+  }

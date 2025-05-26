@@ -1,9 +1,9 @@
-.health-cards {
+/* .health-cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     flex: 1;
-    /* border:2px solid #e0e0e0; */
+ 
     
   }
   
@@ -24,4 +24,60 @@
   
   .card.critical {
     border-left: 5px solid red;
+  } */
+
+
+  /* new responsive css */
+
+  .health-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card.good {
+    border-left: 5px solid green;
+  }
+  
+  .card.warning {
+    border-left: 5px solid orange;
+  }
+  
+  .card.critical {
+    border-left: 5px solid red;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .health-cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+    .card {
+      flex: 1 1 200px;
+      min-width: 160px;
+      padding: 0.8rem;
+      border-radius: 10px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .health-cards {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .card {
+      padding: 0.6rem;
+      border-radius: 8px;
+      font-size: 0.97rem;
+    }
   }
