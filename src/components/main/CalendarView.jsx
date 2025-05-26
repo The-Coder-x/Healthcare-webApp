@@ -1,28 +1,3 @@
-// import React from "react";
-// import { calendarAppointments } from "../../data/appointments";
-// import "./CalendarView.css";
-
-// function CalendarView() {
-//   return (
-//     <section className="calendar-section">
-//       <h3>June 2025</h3>
-//       <div className="calendar-grid">
-//         {calendarAppointments.map((day, idx) => (
-//           <div key={idx} className="calendar-cell">
-//             <span>{day.date}</span>
-//             <div className="slots">
-//               {day.slots.map((time, i) => (
-//                 <div key={i}>{time}</div>
-//               ))}
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default CalendarView;
 
 
 import React, { useState } from "react";
@@ -64,7 +39,7 @@ function CalendarView() {
   return (
     <section className="calendar-section">
       <div className="calendar-header">
-        <span className="calendar-month">October 2021</span>
+        <span className="calendar-month">June 2025</span>
         <div className="calendar-nav">
           <button className="calendar-arrow">
             <ChevronLeft size={18} />
