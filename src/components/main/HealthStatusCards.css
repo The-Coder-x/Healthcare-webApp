@@ -105,10 +105,15 @@
     min-width: 180px;
     position: relative;
   }
-  
+  .card-content{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
   .card-emoji {
     font-size: 2.2rem;
     margin-bottom: 0.2rem;
+
   }
   
   .card-title {
@@ -152,5 +157,15 @@
   @media (max-width: 480px) {
     .card{
      width: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    .card-content{
+      
+      margin: 0 auto;
+    }
+    .card-date{
+      margin: 0 auto;
+      margin-bottom: 0.7rem;
     }
   }
