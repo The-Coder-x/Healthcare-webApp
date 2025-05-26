@@ -1,5 +1,5 @@
 import React from "react";
-import "./ActivityFeed.css";
+import "../../styles/ActivityFeed.css";
 
 const days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
 const activityData = [

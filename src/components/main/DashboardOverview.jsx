@@ -1,7 +1,7 @@
 import React from "react";
 import AnatomySection from "./AnatomySection";
 import HealthStatusCards from "./HealthStatusCards";
-import "./DashboardOverview.css";
+import "../../styles/DashboardOverview.css";
 import CalendarView from "./CalendarView";
 
 function DashboardOverview() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { upcomingAppointments } from "../../data/appointments";
-import "./UpcomingSchedule.css";
+import "../../styles/UpcomingSchedule.css";
 
 
 const groupByDay = (appointments) => {

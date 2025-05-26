@@ -1,5 +1,5 @@
 import React from "react";
-import "./AnatomySection.css";
+import "../../styles/AnatomySection.css";
 import anatomyImage from "../../Assets/img2.jpg";
 import { Search } from "lucide-react"; 
 

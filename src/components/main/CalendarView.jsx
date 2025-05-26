@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CalendarView.css";
+import "../../styles/CalendarView.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 

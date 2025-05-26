@@ -1,5 +1,5 @@
 import React from "react";
-import "./SimpleAppointmentCard.css";
+import "../styles/SimpleAppointment.css";
 
 function SimpleAppointmentCard({ title, time }) {
   return (

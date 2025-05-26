@@ -3,7 +3,7 @@ import DashboardOverview from "./main/DashboardOverview";
 import CalendarView from "./main/CalendarView";
 import UpcomingSchedule from "./main/UpcomingSchedule";
 import ActivityFeed from "./main/ActivityFeed";
-import "./DashboardMainContent.css";
+import "../styles/DashboardMainContent.css";
 
 function DashboardMainContent() {
   return (
