@@ -9,7 +9,7 @@
 
    /* new responsive css */
 
-   .upcoming-schedule {
+   /* .upcoming-schedule {
     background: white;
     padding: 1rem;
     border-radius: 12px;
@@ -19,7 +19,7 @@
     box-sizing: border-box;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 1024px) {
     .upcoming-schedule {
       width: 50vw;
@@ -35,4 +35,250 @@
       padding: 0.4rem;
       border-radius: 7px;
     }
+  } */
+
+/* 
+  .upcoming-schedule {
+    background: #f7faff;
+    border-radius: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 1.5rem 1rem;
+    width: 37vw;
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
+  
+  .upcoming-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #23235b;
+    margin-bottom: 1.2rem;
+  }
+  
+  .upcoming-day-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .upcoming-day-label {
+    color: #b0b8d1;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+  }
+  
+  .upcoming-cards-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .upcoming-card {
+    background: #eaf1ff;
+    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    min-width: 180px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  
+  .upcoming-card-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #23235b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .upcoming-emoji {
+    font-size: 1.25rem;
+  }
+  
+  .upcoming-card-time {
+    font-size: 0.97rem;
+    color: #23235b;
+    opacity: 0.7;
+  }
+  
+
+  @media (max-width: 900px) {
+    .upcoming-schedule {
+      padding: 1rem 0.3rem;
+      border-radius: 12px;
+      max-width: 98vw;
+    }
+    .upcoming-cards-row {
+      gap: 0.7rem;
+    }
+    .upcoming-card {
+      padding: 0.8rem 0.8rem;
+      border-radius: 12px;
+      min-width: 140px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .upcoming-schedule {
+      padding: 0.5rem 0.1rem;
+      border-radius: 8px;
+    }
+    .upcoming-cards-row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .upcoming-card {
+      padding: 0.7rem 0.7rem;
+      border-radius: 8px;
+      min-width: 100px;
+    }
+    .upcoming-title {
+      font-size: 1rem;
+    }
+    .upcoming-day-label {
+      font-size: 0.92rem;
+    }
+  } */
+
+
+  .upcoming-schedule {
+    background: #f7faff;
+    border-radius: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 1.5rem 1rem;
+    /* width: 37vw; */
+    width: 100%;
+    margin: 1rem;
+    /* max-width: 700px; */
+    /* margin: 0 auto; */
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .upcoming-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #23235b;
+    margin-bottom: 1.2rem;
+  }
+  
+  .upcoming-day-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .upcoming-day-label {
+    color: #b0b8d1;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+  }
+  
+  .upcoming-cards-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .upcoming-card {
+    background: #eaf1ff;
+    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    min-width: 180px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  
+  .upcoming-card-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #23235b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .upcoming-emoji {
+    font-size: 1.25rem;
+  }
+  
+  .upcoming-card-time {
+    font-size: 0.97rem;
+    color: #23235b;
+    opacity: 0.7;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .upcoming-schedule {
+      padding: 1.25rem 1rem;
+      border-radius: 14px;
+      width: 100%;
+    }
+    .upcoming-cards-row {
+      gap: 0.8rem;
+    }
+    .upcoming-card {
+      padding: 0.9rem 1rem;
+      border-radius: 14px;
+      min-width: 160px;
+    }
+    .upcoming-title {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .upcoming-schedule {
+      padding: 1rem 0.5rem;
+      border-radius: 12px;
+    }
+    .upcoming-card {
+      padding: 0.8rem 0.9rem;
+      min-width: 140px;
+    }
+    .upcoming-title {
+      font-size: 1rem;
+    }
+    .upcoming-day-label {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .upcoming-schedule {
+      padding: 0.5rem 0.3rem;
+      border-radius: 10px;
+      margin: 0;
+      margin-top: 1rem;
+    }
+    .upcoming-cards-row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .upcoming-card {
+      padding: 0.7rem 0.8rem;
+      border-radius: 8px;
+      /* min-width: 100%; */
+    }
+    .upcoming-title {
+      font-size: 0.95rem;
+    }
+    .upcoming-day-label {
+      font-size: 0.9rem;
+    }
+    .upcoming-card-title {
+      font-size: 1rem;
+    }
+    .upcoming-card-time {
+      font-size: 0.85rem;
+    }
+  }
+  

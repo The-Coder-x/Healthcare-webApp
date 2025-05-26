@@ -8,10 +8,13 @@ import "./DashboardMainContent.css";
 function DashboardMainContent() {
   return (
     <main className="dashboard-main">
-      <DashboardOverview />
-      {/* <CalendarView /> */}
-      <ActivityFeed />
-      <UpcomingSchedule />
+      <div>
+        <DashboardOverview />
+      </div>
+      <div className="dash-second-half">
+        <ActivityFeed />
+        <UpcomingSchedule />
+      </div>
     </main>
   );
 }

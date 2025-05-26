@@ -57,8 +57,10 @@ import {
   MessageSquare,
   Phone,
   Settings,
+  
 } from "lucide-react";
-
+import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 const sidebarLinks = [
   {
     section: "General",
@@ -97,7 +99,7 @@ function Sidebar() {
         onClick={handleToggle}
         aria-label="Toggle sidebar"
       >
-        {open ? "Close" : "Menu"}
+        {open ? <IoMdClose /> : <IoMenu />}
       </button>
 
       {/* Sidebar */}
@@ -130,3 +132,5 @@ function Sidebar() {
 }
 
 export default Sidebar;
+
+

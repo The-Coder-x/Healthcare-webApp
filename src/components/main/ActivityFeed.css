@@ -224,7 +224,7 @@
 
 
    /* new responsive css */
-
+/* 
    .activity-card {
     background-color: white;
     border-radius: 16px;
@@ -234,7 +234,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
+    width: 43vw;
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -306,7 +306,7 @@
     white-space: nowrap;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 1024px) {
     .activity-card {
       padding: 0.75rem;
@@ -338,6 +338,156 @@
       padding: 0.5rem;
       border-radius: 8px;
       gap: 0.5rem;
+    }
+    .activity-header h3 {
+      font-size: 1rem;
+    }
+    .activity-header p {
+      font-size: 0.8rem;
+    }
+    .activity-chart {
+      height: 70px;
+      padding: 0 0.2rem;
+      gap: 0.15rem;
+    }
+    .activity-bar-wrapper {
+      min-width: 22px;
+      gap: 0.1rem;
+    }
+    .activity-bars {
+      height: 40px;
+      width: 6px;
+    }
+    .bar {
+      width: 4px;
+      margin-bottom: 2px;
+    }
+    .day-label {
+      font-size: 0.6rem;
+      margin-top: 2px;
+    }
+  }
+    
+  */
+
+
+  .activity-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* width: 43vw; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    /* margin: 1rem; */
+  }
+  
+  .activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .activity-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .activity-header p {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .activity-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    padding: 0 1rem;
+    overflow-x: auto;
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .activity-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    min-width: 40px;
+  }
+  
+  .activity-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100px;
+    width: 10px;
+    position: relative;
+  }
+  
+  .bar {
+    width: 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+  
+  .bar1 {
+    background-color: #4e9af1;
+  }
+  
+  .bar2 {
+    background-color: #00c49a;
+  }
+  
+  .day-label {
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 4px;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 1024px) {
+    .activity-card {
+      padding: 0.75rem;
+      border-radius: 12px;
+      width: 100%;
+    }
+    .activity-chart {
+      height: 100px;
+      padding: 0 0.5rem;
+      gap: 0.3rem;
+    }
+    .activity-bar-wrapper {
+      min-width: 32px;
+    }
+    .activity-bars {
+      height: 70px;
+      width: 8px;
+    }
+    .bar {
+      width: 6px;
+      margin-bottom: 3px;
+    }
+    .day-label {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .activity-card {
+      padding: 0.5rem;
+      border-radius: 8px;
+      gap: 0.5rem;
+      width: 96%;
     }
     .activity-header h3 {
       font-size: 1rem;

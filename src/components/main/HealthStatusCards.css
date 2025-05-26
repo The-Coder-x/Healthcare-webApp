@@ -28,7 +28,7 @@
 
 
   /* new responsive css */
-
+/* 
   .health-cards {
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@
     border-left: 5px solid red;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 900px) {
     .health-cards {
       flex-direction: row;
@@ -79,5 +79,78 @@
       padding: 0.6rem;
       border-radius: 8px;
       font-size: 0.97rem;
+    }
+  } */
+
+
+
+
+
+
+  /* new */
+  .health-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .card {
+    background: #f7faff;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1.2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 180px;
+    position: relative;
+  }
+  
+  .card-emoji {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #23235b;
+    margin: 0 0 0.2rem 0;
+  }
+  
+  .card-date {
+    font-size: 0.95rem;
+    color: #b0b8d1;
+    margin-bottom: 0.7rem;
+  }
+  
+  .progress-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: #e6eaf3;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 0.2rem;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.4s;
+  }
+  
+  .progress-bar.good {
+    background: #1ee0e0;
+  }
+  .progress-bar.warning {
+    background: #ff9800;
+  }
+  .progress-bar.critical {
+    background: #d32f2f;
+  }
+
+  @media (max-width: 480px) {
+    .card{
+     width: 90%;
     }
   }

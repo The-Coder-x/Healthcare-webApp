@@ -1,0 +1,43 @@
+.activityContainer {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 1.2rem;
+    color: #223c63;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .chart {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    height: 120px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .barContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    height: 100%;
+    padding: 2px;
+  }
+  .bar {
+    width: 80%;
+    background-color: #2980b9;
+    border-radius: 8px 8px 0 0;
+  }
+  
