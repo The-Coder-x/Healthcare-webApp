@@ -1,10 +1,8 @@
-
-
 import React, { useState } from "react";
 import "./CalendarView.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// Example data (replace with your actual data)
+
 const weekDays = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
 const days = [
   { date: 25, slots: ["10:00", "11:00", "12:00"] },
@@ -15,8 +13,8 @@ const days = [
   { date: 30, slots: ["12:00", "14:00", "15:00"] },
   { date: 31, slots: ["09:00", "10:00", "11:00"] },
 ];
-const selectedDayIdx = 1; // Tuesday (26th)
-const selectedSlotIdx = 1; // 09:00
+const selectedDayIdx = 1; 
+const selectedSlotIdx = 1; 
 
 const appointments = [
   {
